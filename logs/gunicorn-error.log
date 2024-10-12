@@ -1,0 +1,726 @@
+supervisor: couldn't exec /home/ubuntu/Hedge/hedgenv/bin/gunicorn_configuration: EACCES
+supervisor: child process was not spawned
+supervisor: couldn't exec /home/ubuntu/Hedge/hedgenv/bin/gunicorn_configuration: EACCES
+supervisor: child process was not spawned
+supervisor: couldn't exec /home/ubuntu/Hedge/hedgenv/bin/gunicorn_configuration: EACCES
+supervisor: child process was not spawned
+supervisor: couldn't exec /home/ubuntu/Hedge/hedgenv/bin/gunicorn_configuration: EACCES
+supervisor: child process was not spawned
+supervisor: couldn't exec /home/ubuntu/Hedge/hedgenv/bin/gunicorn_configuration: EACCES
+supervisor: child process was not spawned
+supervisor: couldn't exec /home/ubuntu/Hedge/hedgenv/bin/gunicorn_configuration: EACCES
+supervisor: child process was not spawned
+supervisor: couldn't exec /home/ubuntu/Hedge/hedgenv/bin/gunicorn_configuration: EACCES
+supervisor: child process was not spawned
+supervisor: couldn't exec /home/ubuntu/Hedge/hedgenv/bin/gunicorn_configuration: EACCES
+supervisor: child process was not spawned
+/home/ubuntu/Hedge/hedgenv/bin/gunicorn_configuration: line 19: /home/ubuntu/Hedge/hedgenv/bin/gunicorn: No such file or directory
+/home/ubuntu/Hedge/hedgenv/bin/gunicorn_configuration: line 19: /home/ubuntu/Hedge/hedgenv/bin/gunicorn: No such file or directory
+/home/ubuntu/Hedge/hedgenv/bin/gunicorn_configuration: line 19: /home/ubuntu/Hedge/hedgenv/bin/gunicorn: No such file or directory
+/home/ubuntu/Hedge/hedgenv/bin/gunicorn_configuration: line 19: /home/ubuntu/Hedge/hedgenv/bin/gunicorn: No such file or directory
+[2024-10-04 16:51:12 +0000] [19703] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/home/ubuntu/Hedge/gunicorn.sock']
+  backlog: 2048
+  workers: 3
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/Hedge/hedge
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1', '::1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: -
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: hedge
+  default_proc_name: hedge.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f58f615d510>
+  on_reload: <function OnReload.on_reload at 0x7f58f615d630>
+  when_ready: <function WhenReady.when_ready at 0x7f58f615d750>
+  pre_fork: <function Prefork.pre_fork at 0x7f58f615d870>
+  post_fork: <function Postfork.post_fork at 0x7f58f615d990>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f58f615dab0>
+  worker_int: <function WorkerInt.worker_int at 0x7f58f615dbd0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f58f615dcf0>
+  pre_exec: <function PreExec.pre_exec at 0x7f58f615de10>
+  pre_request: <function PreRequest.pre_request at 0x7f58f615df30>
+  post_request: <function PostRequest.post_request at 0x7f58f615dfc0>
+  child_exit: <function ChildExit.child_exit at 0x7f58f615e0e0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f58f615e200>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f58f615e320>
+  on_exit: <function OnExit.on_exit at 0x7f58f615e440>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f58f615e560>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1', '::1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  permit_obsolete_folding: False
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  forwarder_headers: ['SCRIPT_NAME', 'PATH_INFO']
+  header_map: drop
+[2024-10-04 16:51:12 +0000] [19703] [INFO] Starting gunicorn 23.0.0
+[2024-10-04 16:51:12 +0000] [19703] [DEBUG] Arbiter booted
+[2024-10-04 16:51:12 +0000] [19703] [INFO] Listening at: unix:/home/ubuntu/Hedge/gunicorn.sock (19703)
+[2024-10-04 16:51:12 +0000] [19703] [INFO] Using worker: sync
+[2024-10-04 16:51:12 +0000] [19706] [INFO] Booting worker with pid: 19706
+[2024-10-04 16:51:12 +0000] [19707] [INFO] Booting worker with pid: 19707
+[2024-10-04 16:51:12 +0000] [19708] [INFO] Booting worker with pid: 19708
+[2024-10-04 16:51:12 +0000] [19703] [DEBUG] 3 workers
+[2024-10-04 17:11:16 +0000] [19703] [INFO] Handling signal: term
+[2024-10-04 17:11:16 +0000] [19707] [INFO] Worker exiting (pid: 19707)
+[2024-10-04 17:11:16 +0000] [19706] [INFO] Worker exiting (pid: 19706)
+[2024-10-04 17:11:16 +0000] [19708] [INFO] Worker exiting (pid: 19708)
+[2024-10-04 17:11:16 +0000] [19703] [INFO] Shutting down: Master
+[2024-10-04 17:11:17 +0000] [21447] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/home/ubuntu/Hedge/gunicorn.sock']
+  backlog: 2048
+  workers: 3
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/Hedge/hedge
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1', '::1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: -
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: hedge
+  default_proc_name: hedge.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7a9c4425d510>
+  on_reload: <function OnReload.on_reload at 0x7a9c4425d630>
+  when_ready: <function WhenReady.when_ready at 0x7a9c4425d750>
+  pre_fork: <function Prefork.pre_fork at 0x7a9c4425d870>
+  post_fork: <function Postfork.post_fork at 0x7a9c4425d990>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7a9c4425dab0>
+  worker_int: <function WorkerInt.worker_int at 0x7a9c4425dbd0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7a9c4425dcf0>
+  pre_exec: <function PreExec.pre_exec at 0x7a9c4425de10>
+  pre_request: <function PreRequest.pre_request at 0x7a9c4425df30>
+  post_request: <function PostRequest.post_request at 0x7a9c4425dfc0>
+  child_exit: <function ChildExit.child_exit at 0x7a9c4425e0e0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7a9c4425e200>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7a9c4425e320>
+  on_exit: <function OnExit.on_exit at 0x7a9c4425e440>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7a9c4425e560>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1', '::1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  permit_obsolete_folding: False
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  forwarder_headers: ['SCRIPT_NAME', 'PATH_INFO']
+  header_map: drop
+[2024-10-04 17:11:17 +0000] [21447] [INFO] Starting gunicorn 23.0.0
+[2024-10-04 17:11:17 +0000] [21447] [DEBUG] Arbiter booted
+[2024-10-04 17:11:17 +0000] [21447] [INFO] Listening at: unix:/home/ubuntu/Hedge/gunicorn.sock (21447)
+[2024-10-04 17:11:17 +0000] [21447] [INFO] Using worker: sync
+[2024-10-04 17:11:17 +0000] [21450] [INFO] Booting worker with pid: 21450
+[2024-10-04 17:11:17 +0000] [21451] [INFO] Booting worker with pid: 21451
+[2024-10-04 17:11:17 +0000] [21452] [INFO] Booting worker with pid: 21452
+[2024-10-04 17:11:17 +0000] [21447] [DEBUG] 3 workers
+[2024-10-04 17:18:00 +0000] [21447] [INFO] Handling signal: term
+[2024-10-04 17:18:00 +0000] [21450] [INFO] Worker exiting (pid: 21450)
+[2024-10-04 17:18:00 +0000] [21451] [INFO] Worker exiting (pid: 21451)
+[2024-10-04 17:18:00 +0000] [21452] [INFO] Worker exiting (pid: 21452)
+[2024-10-04 17:18:00 +0000] [21447] [INFO] Shutting down: Master
+Traceback (most recent call last):
+  File "/home/ubuntu/Hedge/hedgenv/bin/uvicorn", line 8, in <module>
+    sys.exit(main())
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 1157, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 1078, in main
+    rv = self.invoke(ctx)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 1434, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 783, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/main.py", line 412, in main
+    run(
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/main.py", line 579, in run
+    server.run()
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/server.py", line 69, in serve
+    await self._serve(sockets)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/server.py", line 76, in _serve
+    config.load()
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/importer.py", line 22, in import_from_string
+    raise exc from None
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'hedge'
+Traceback (most recent call last):
+  File "/home/ubuntu/Hedge/hedgenv/bin/uvicorn", line 8, in <module>
+    sys.exit(main())
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 1157, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 1078, in main
+    rv = self.invoke(ctx)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 1434, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 783, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/main.py", line 412, in main
+    run(
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/main.py", line 579, in run
+    server.run()
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/server.py", line 69, in serve
+    await self._serve(sockets)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/server.py", line 76, in _serve
+    config.load()
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/importer.py", line 22, in import_from_string
+    raise exc from None
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'hedge'
+Traceback (most recent call last):
+  File "/home/ubuntu/Hedge/hedgenv/bin/uvicorn", line 8, in <module>
+    sys.exit(main())
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 1157, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 1078, in main
+    rv = self.invoke(ctx)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 1434, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 783, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/main.py", line 412, in main
+    run(
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/main.py", line 579, in run
+    server.run()
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/server.py", line 69, in serve
+    await self._serve(sockets)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/server.py", line 76, in _serve
+    config.load()
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/importer.py", line 22, in import_from_string
+    raise exc from None
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'hedge'
+Traceback (most recent call last):
+  File "/home/ubuntu/Hedge/hedgenv/bin/uvicorn", line 8, in <module>
+    sys.exit(main())
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 1157, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 1078, in main
+    rv = self.invoke(ctx)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 1434, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 783, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/main.py", line 412, in main
+    run(
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/main.py", line 579, in run
+    server.run()
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/server.py", line 69, in serve
+    await self._serve(sockets)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/server.py", line 76, in _serve
+    config.load()
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/importer.py", line 22, in import_from_string
+    raise exc from None
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'hedge'
+Traceback (most recent call last):
+  File "/home/ubuntu/Hedge/hedgenv/bin/uvicorn", line 8, in <module>
+    sys.exit(main())
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 1157, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 1078, in main
+    rv = self.invoke(ctx)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 1434, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 783, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/main.py", line 412, in main
+    run(
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/main.py", line 579, in run
+    server.run()
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/server.py", line 69, in serve
+    await self._serve(sockets)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/server.py", line 76, in _serve
+    config.load()
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/importer.py", line 22, in import_from_string
+    raise exc from None
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'hedge'
+Traceback (most recent call last):
+  File "/home/ubuntu/Hedge/hedgenv/bin/uvicorn", line 8, in <module>
+    sys.exit(main())
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 1157, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 1078, in main
+    rv = self.invoke(ctx)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 1434, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 783, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/main.py", line 412, in main
+    run(
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/main.py", line 579, in run
+    server.run()
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/server.py", line 69, in serve
+    await self._serve(sockets)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/server.py", line 76, in _serve
+    config.load()
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/importer.py", line 22, in import_from_string
+    raise exc from None
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'hedge'
+Traceback (most recent call last):
+  File "/home/ubuntu/Hedge/hedgenv/bin/uvicorn", line 8, in <module>
+    sys.exit(main())
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 1157, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 1078, in main
+    rv = self.invoke(ctx)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 1434, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 783, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/main.py", line 412, in main
+    run(
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/main.py", line 579, in run
+    server.run()
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/server.py", line 69, in serve
+    await self._serve(sockets)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/server.py", line 76, in _serve
+    config.load()
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/importer.py", line 22, in import_from_string
+    raise exc from None
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'hedge'
+Traceback (most recent call last):
+  File "/home/ubuntu/Hedge/hedgenv/bin/uvicorn", line 8, in <module>
+    sys.exit(main())
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 1157, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 1078, in main
+    rv = self.invoke(ctx)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 1434, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 783, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/main.py", line 412, in main
+    run(
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/main.py", line 579, in run
+    server.run()
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/server.py", line 69, in serve
+    await self._serve(sockets)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/server.py", line 76, in _serve
+    config.load()
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/importer.py", line 22, in import_from_string
+    raise exc from None
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'hedge'
+Traceback (most recent call last):
+  File "/home/ubuntu/Hedge/hedgenv/bin/uvicorn", line 8, in <module>
+    sys.exit(main())
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 1157, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 1078, in main
+    rv = self.invoke(ctx)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 1434, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 783, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/main.py", line 412, in main
+    run(
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/main.py", line 579, in run
+    server.run()
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/server.py", line 69, in serve
+    await self._serve(sockets)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/server.py", line 76, in _serve
+    config.load()
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/importer.py", line 22, in import_from_string
+    raise exc from None
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'hedge'
+Traceback (most recent call last):
+  File "/home/ubuntu/Hedge/hedgenv/bin/uvicorn", line 8, in <module>
+    sys.exit(main())
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 1157, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 1078, in main
+    rv = self.invoke(ctx)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 1434, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 783, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/main.py", line 412, in main
+    run(
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/main.py", line 579, in run
+    server.run()
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/server.py", line 69, in serve
+    await self._serve(sockets)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/server.py", line 76, in _serve
+    config.load()
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/importer.py", line 22, in import_from_string
+    raise exc from None
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'hedge'
+Traceback (most recent call last):
+  File "/home/ubuntu/Hedge/hedgenv/bin/uvicorn", line 8, in <module>
+    sys.exit(main())
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 1157, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 1078, in main
+    rv = self.invoke(ctx)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 1434, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 783, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/main.py", line 412, in main
+    run(
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/main.py", line 579, in run
+    server.run()
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/server.py", line 69, in serve
+    await self._serve(sockets)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/server.py", line 76, in _serve
+    config.load()
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/importer.py", line 22, in import_from_string
+    raise exc from None
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'hedge'
+Traceback (most recent call last):
+  File "/home/ubuntu/Hedge/hedgenv/bin/uvicorn", line 8, in <module>
+    sys.exit(main())
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 1157, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 1078, in main
+    rv = self.invoke(ctx)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 1434, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/click/core.py", line 783, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/main.py", line 412, in main
+    run(
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/main.py", line 579, in run
+    server.run()
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/server.py", line 69, in serve
+    await self._serve(sockets)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/server.py", line 76, in _serve
+    config.load()
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/importer.py", line 22, in import_from_string
+    raise exc from None
+  File "/home/ubuntu/Hedge/hedgenv/lib/python3.10/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'hedge'
